@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<fx:root dividerPositions="0.29797979797979796" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="515.0" prefWidth="708.0" type="SplitPane" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainController">
+  <items>
+    <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="200.0" minHeight="0.0" minWidth="0.0" prefWidth="200.0">
+         <children>
+            <VBox layoutX="38.0" layoutY="89.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: red;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <TextField promptText="Pesquisar..." />
+                  <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Inicio" />
+                  <Accordion>
+                    <panes>
+                      <TitledPane animated="false" text="Funcionários">
+                        <content>
+                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <VBox layoutX="19.6" layoutY="-0.40000000000000036" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" nodeOrientation="LEFT_TO_RIGHT" prefHeight="0.0" prefWidth="0.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="9.0" AnchorPane.topAnchor="0.0">
+                                       <children>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Inserir Funcionários">
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor></Text>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Alterar Funcionários">
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor></Text>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Excluir Funcionários">
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor></Text>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Consultar Funcionários">
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor></Text>
+                                       </children>
+                                    </VBox>
+                                 </children></AnchorPane>
+                        </content>
+                      </TitledPane>
+                      <TitledPane animated="false" text="Clientes">
+                        <content>
+                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                       <children>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Inserir Clientes">
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor></Text>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Alterar Clientes">
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor></Text>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Excluir Clientes">
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor></Text>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Consultar Clientes">
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor></Text>
+                                       </children>
+                                    </VBox>
+                                 </children></AnchorPane>
+                        </content>
+                      </TitledPane>
+                        <TitledPane animated="false" layoutX="10.0" layoutY="60.0" text="Aulas">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="-0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                       <children>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Inserir Aulas">
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor></Text>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Alterar Aulas">
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor></Text>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Excluir Aulas">
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor></Text>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Consultar Aulas">
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor></Text>
+                                       </children>
+                                    </VBox>
+                                 </children></AnchorPane>
+                           </content>
+                        </TitledPane>
+                    </panes>
+                  </Accordion>
+                  <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Relatórios" />
+                  <Button layoutX="10.0" layoutY="160.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Configurações" />
+               </children>
+            </VBox>
+         </children></AnchorPane>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="503.0" prefWidth="497.0">
+         <children>
+            <BorderPane layoutX="117.0" layoutY="157.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <bottom>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" BorderPane.alignment="CENTER" />
+               </bottom>
+               <center>
+                  <ImageView fitHeight="252.0" fitWidth="401.0" pickOnBounds="true" preserveRatio="true" style="-fx-opacity: 50%;" BorderPane.alignment="CENTER">
+                     <image>
+                        <Image url="@../../../Imgs/Academia%20FDS/Academia%20FDS.png" />
+                     </image></ImageView>
+               </center>
+               <top>
+                  <VBox alignment="CENTER" prefHeight="70.0" prefWidth="493.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <Text fx:id="txtBoasVindas" strokeType="OUTSIDE" strokeWidth="0.0" text="Bem-Vindo &quot;Nome do Usuário&quot;">
+                           <font>
+                              <Font name="Segoe UI Bold" size="26.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </VBox>
+               </top>
+            </BorderPane>
+         </children></AnchorPane>
+  </items>
+</fx:root>

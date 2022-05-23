@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<SplitPane dividerPositions="0.29797979797979796" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="620.0" prefWidth="748.0" style="-fx-background-color: A5B7C1;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+  <items>
+    <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="200.0" minHeight="0.0" minWidth="0.0" prefWidth="200.0">
+         <children>
+            <VBox layoutX="38.0" layoutY="89.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="200.0" prefWidth="189.0" style="-fx-background-color: A5B7C1;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <TextField promptText="Pesquisar" />
+                  <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: DBDBE5; -fx-border-color: A5B7C1;" text="Inicio" textFill="#535d55">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font></Button>
+                  <Accordion>
+                    <panes>
+                      <TitledPane animated="false" style="-fx-background-color: DBDBE5;" text="Funcionários" textFill="#514644">
+                        <content>
+                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: A5B7C1;">
+                                 <children>
+                                    <VBox layoutX="19.6" layoutY="-0.40000000000000036" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" nodeOrientation="LEFT_TO_RIGHT" prefHeight="0.0" prefWidth="0.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="9.0" AnchorPane.topAnchor="0.0">
+                                       <children>
+                                          <Text fill="#514644" strokeType="OUTSIDE" strokeWidth="0.0" text="Inserir Funcionários" />
+                                          <Text fill="#514644" strokeType="OUTSIDE" strokeWidth="0.0" text="Alterar Funcionários" />
+                                          <Text fill="#514644" strokeType="OUTSIDE" strokeWidth="0.0" text="Excluir Funcionários" />
+                                          <Text fill="#514644" strokeType="OUTSIDE" strokeWidth="0.0" text="Consultar Funcionários" />
+                                       </children>
+                                    </VBox>
+                                 </children></AnchorPane>
+                        </content>
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                      </TitledPane>
+                      <TitledPane animated="false" text="Clientes" textFill="#514644">
+                        <content>
+                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: A5B7C1;">
+                                 <children>
+                                    <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                       <children>
+                                          <Text fill="#514644" strokeType="OUTSIDE" strokeWidth="0.0" text="Inserir Clientes" />
+                                          <Text fill="#514644" strokeType="OUTSIDE" strokeWidth="0.0" text="Alterar Clientes" />
+                                          <Text fill="#514644" strokeType="OUTSIDE" strokeWidth="0.0" text="Excluir Clientes" />
+                                          <Text fill="#514644" strokeType="OUTSIDE" strokeWidth="0.0" text="Consultar Clientes" />
+                                       </children>
+                                    </VBox>
+                                 </children></AnchorPane>
+                        </content>
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                      </TitledPane>
+                        <TitledPane animated="false" layoutX="10.0" layoutY="60.0" text="Aulas" textFill="#514644">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: A5B7C1;">
+                                 <children>
+                                    <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="-0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                       <children>
+                                          <Text fill="#514644" strokeType="OUTSIDE" strokeWidth="0.0" text="Inserir Aulas" />
+                                          <Text fill="#514644" strokeType="OUTSIDE" strokeWidth="0.0" text="Alterar Aulas" />
+                                          <Text fill="#514644" strokeType="OUTSIDE" strokeWidth="0.0" text="Excluir Aulas" />
+                                          <Text fill="#514644" strokeType="OUTSIDE" strokeWidth="0.0" text="Consultar Aulas" />
+                                       </children>
+                                    </VBox>
+                                 </children></AnchorPane>
+                           </content>
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </TitledPane>
+                    </panes>
+                  </Accordion>
+                  <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Relatórios" textFill="#514644">
+                     <font>
+                        <Font size="13.0" />
+                     </font></Button>
+                  <Button layoutX="10.0" layoutY="160.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Configurações" textFill="#514644">
+                     <font>
+                        <Font size="13.0" />
+                     </font></Button>
+               </children>
+            </VBox>
+         </children></AnchorPane>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="503.0" prefWidth="497.0">
+         <children>
+            <BorderPane layoutX="60.0" layoutY="176.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <top>
+                  <Pane prefHeight="71.0" prefWidth="540.0" style="-fx-background-color: A5B7C1;" BorderPane.alignment="CENTER">
+                     <children>
+                        <Text fill="#514644" layoutX="191.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Desconto" textAlignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="36.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
+               </top>
+               <center>
+                  <GridPane BorderPane.alignment="CENTER">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="289.0" minWidth="7.0" prefWidth="252.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="494.0" minWidth="10.0" prefWidth="249.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints maxHeight="473.0" minHeight="10.0" prefHeight="473.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="292.0" minHeight="0.0" prefHeight="9.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <VBox prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: DBDBE5;">
+                           <children>
+                              <Label text=" ID Cliente" textFill="#535d55">
+                                 <font>
+                                    <Font name="System Bold" size="13.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets top="5.0" />
+                                 </VBox.margin></Label>
+                              <TextField alignment="CENTER" style="-fx-border-color: A5B7C1;">
+                                 <VBox.margin>
+                                    <Insets left="2.0" />
+                                 </VBox.margin></TextField>
+                              <Label />
+                              <Label text=" ID Aula" textFill="#535d55">
+                                 <font>
+                                    <Font name="System Bold" size="13.0" />
+                                 </font>
+                              </Label>
+                              <TextField alignment="CENTER" style="-fx-border-color: A5B7C1;">
+                                 <VBox.margin>
+                                    <Insets left="2.0" />
+                                 </VBox.margin></TextField>
+                              <Label />
+                              <Label text=" Valor Desconto" textFill="#535d55">
+                                 <font>
+                                    <Font name="System Bold" size="13.0" />
+                                 </font>
+                              </Label>
+                              <TextField alignment="CENTER" style="-fx-border-color: A5B7C1;">
+                                 <VBox.margin>
+                                    <Insets left="2.0" />
+                                 </VBox.margin></TextField>
+                              <Label />
+                              <Label text=" Duração do Desconto" textFill="#535d55">
+                                 <font>
+                                    <Font name="System Bold" size="13.0" />
+                                 </font>
+                              </Label>
+                              <ComboBox prefHeight="25.0" prefWidth="262.0" style="-fx-background-color: white; -fx-border-color: A5B7C1;">
+                                 <VBox.margin>
+                                    <Insets left="2.0" />
+                                 </VBox.margin></ComboBox>
+                              <TextField alignment="CENTER" style="-fx-border-color: A5B7C1;" text="XX/XX/XXXX - XX/XX/XXXX">
+                                 <VBox.margin>
+                                    <Insets left="2.0" />
+                                 </VBox.margin></TextField>
+                              <Label />
+                           </children>
+                           <padding>
+                              <Insets right="10.0" />
+                           </padding>
+                        </VBox>
+                        <Pane prefHeight="74.0" prefWidth="539.0" style="-fx-background-color: DBDBE5;" GridPane.rowIndex="1" />
+                        <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: DBDBE5;" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <children>
+                              <Button layoutX="81.0" layoutY="25.0" mnemonicParsing="false" style="-fx-background-color: DBDBE5; -fx-border-color: A5B7C1;" text="Aplicar Desconto" textFill="#4f4442">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font></Button>
+                           </children></Pane>
+                        <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: DBDBE5;" GridPane.columnIndex="1">
+                           <children>
+                              <TextArea layoutX="8.0" layoutY="28.0" prefHeight="431.0" prefWidth="253.0" style="-fx-border-color: A5B7C1;" />
+                              <Label layoutX="8.0" layoutY="4.0" text="Comentário" textFill="#535d55">
+                                 <font>
+                                    <Font name="System Bold" size="13.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </Pane>
+                     </children>
+                  </GridPane>
+               </center>
+            </BorderPane>
+         </children></AnchorPane>
+  </items>
+</SplitPane>

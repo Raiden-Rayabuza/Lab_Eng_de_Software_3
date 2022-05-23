@@ -4,7 +4,6 @@
 <?import javafx.scene.control.Accordion?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.SplitPane?>
-<?import javafx.scene.control.TextField?>
 <?import javafx.scene.control.TitledPane?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
@@ -14,14 +13,13 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<fx:root dividerPositions="0.29797979797979796" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="515.0" prefWidth="708.0" type="SplitPane" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainController">
+<SplitPane dividerPositions="0.29797979797979796" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="515.0" prefWidth="708.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
   <items>
     <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="200.0" minHeight="0.0" minWidth="0.0" prefWidth="200.0">
          <children>
             <VBox layoutX="38.0" layoutY="89.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: red;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                <children>
-                  <TextField promptText="Pesquisar..." />
-                  <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Inicio" />
+                  <Button fx:id="btnInicio" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Inicio" />
                   <Accordion>
                     <panes>
                       <TitledPane animated="false" text="Funcionários">
@@ -30,19 +28,19 @@
                                  <children>
                                     <VBox layoutX="19.6" layoutY="-0.40000000000000036" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" nodeOrientation="LEFT_TO_RIGHT" prefHeight="0.0" prefWidth="0.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="9.0" AnchorPane.topAnchor="0.0">
                                        <children>
-                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Inserir Funcionários">
+                                          <Text fx:id="linkInserirFunc" strokeType="OUTSIDE" strokeWidth="0.0" text="Inserir Funcionários">
                                              <cursor>
                                                 <Cursor fx:constant="HAND" />
                                              </cursor></Text>
-                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Alterar Funcionários">
+                                          <Text fx:id="linkAlterarFunc" strokeType="OUTSIDE" strokeWidth="0.0" text="Alterar Funcionários">
                                              <cursor>
                                                 <Cursor fx:constant="HAND" />
                                              </cursor></Text>
-                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Excluir Funcionários">
+                                          <Text fx:id="linkExcluirFunc" strokeType="OUTSIDE" strokeWidth="0.0" text="Excluir Funcionários">
                                              <cursor>
                                                 <Cursor fx:constant="HAND" />
                                              </cursor></Text>
-                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Consultar Funcionários">
+                                          <Text fx:id="linkConsultarFunc" strokeType="OUTSIDE" strokeWidth="0.0" text="Consultar Funcionários">
                                              <cursor>
                                                 <Cursor fx:constant="HAND" />
                                              </cursor></Text>
@@ -57,19 +55,19 @@
                                  <children>
                                     <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                                        <children>
-                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Inserir Clientes">
+                                          <Text fx:id="linkInserirClientes" strokeType="OUTSIDE" strokeWidth="0.0" text="Inserir Clientes">
                                              <cursor>
                                                 <Cursor fx:constant="HAND" />
                                              </cursor></Text>
-                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Alterar Clientes">
+                                          <Text fx:id="linkIAlterarClientes" strokeType="OUTSIDE" strokeWidth="0.0" text="Alterar Clientes">
                                              <cursor>
                                                 <Cursor fx:constant="HAND" />
                                              </cursor></Text>
-                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Excluir Clientes">
+                                          <Text fx:id="linkExcluirClientes" strokeType="OUTSIDE" strokeWidth="0.0" text="Excluir Clientes">
                                              <cursor>
                                                 <Cursor fx:constant="HAND" />
                                              </cursor></Text>
-                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Consultar Clientes">
+                                          <Text fx:id="linkConsultarClientes" strokeType="OUTSIDE" strokeWidth="0.0" text="Consultar Clientes">
                                              <cursor>
                                                 <Cursor fx:constant="HAND" />
                                              </cursor></Text>
@@ -84,19 +82,19 @@
                                  <children>
                                     <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="-0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                                        <children>
-                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Inserir Aulas">
+                                          <Text fx:id="linkInserirAulas" strokeType="OUTSIDE" strokeWidth="0.0" text="Inserir Aulas">
                                              <cursor>
                                                 <Cursor fx:constant="HAND" />
                                              </cursor></Text>
-                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Alterar Aulas">
+                                          <Text fx:id="linkAlterarAulas" strokeType="OUTSIDE" strokeWidth="0.0" text="Alterar Aulas">
                                              <cursor>
                                                 <Cursor fx:constant="HAND" />
                                              </cursor></Text>
-                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Excluir Aulas">
+                                          <Text fx:id="linkExcluirAulas" strokeType="OUTSIDE" strokeWidth="0.0" text="Excluir Aulas">
                                              <cursor>
                                                 <Cursor fx:constant="HAND" />
                                              </cursor></Text>
-                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Consultar Aulas">
+                                          <Text fx:id="linkConsultarAulas" strokeType="OUTSIDE" strokeWidth="0.0" text="Consultar Aulas">
                                              <cursor>
                                                 <Cursor fx:constant="HAND" />
                                              </cursor></Text>
@@ -107,8 +105,8 @@
                         </TitledPane>
                     </panes>
                   </Accordion>
-                  <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Relatórios" />
-                  <Button layoutX="10.0" layoutY="160.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Configurações" />
+                  <Button fx:id="btnRelatorio" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Relatórios" />
+                  <Button fx:id="btnConfiguracoes" layoutX="10.0" layoutY="160.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Configurações" />
                </children>
             </VBox>
          </children></AnchorPane>
@@ -138,4 +136,4 @@
             </BorderPane>
          </children></AnchorPane>
   </items>
-</fx:root>
+</SplitPane>
